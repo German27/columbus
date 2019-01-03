@@ -44,12 +44,12 @@
 
           <div class="form-group">
             <div class="form-row">
-              <div class="col">
+              {{-- <div class="col">
                 <label><h6>Nombre de Usuario:</h6></label>
                 <input type="text" class="form-control" name="username" value="" disabled>
                 <div class="invalid-feedback">
                 </div>
-              </div>
+              </div> --}}
               <div class="col">
                 <label><h6>Pais:</h6></label>
                 <select id="inputState" class="form-control" name="country" value="" disabled>

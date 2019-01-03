@@ -20,7 +20,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img class="d-block img-fluid" src="images/carrousel-form-1.jpeg" alt="First slide">
+            <img class="d-block img-fluid" src="images/default.jpg" alt="First slide">
             <div class="carousel-caption d-none d-md-block">
               <div class="banner-text">
                 <h2>Disfruta de nuestros beneficios</h2>
@@ -29,7 +29,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block img-fluid" src="images/carrousel-form-2.jpeg" alt="First slide">
+            <img class="d-block img-fluid" src="images/default.jpg" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
               <div class="banner-text">
                 <h2>HOT SALE</h2>
@@ -38,7 +38,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block img-fluid" src="images/carrousel-form-3.jpeg" alt="First slide">
+            <img class="d-block img-fluid" src="images/default.jpg" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
               <div class="banner-text">
                 <h2>Expande nuestra comunidad</h2>
@@ -84,7 +84,7 @@
       </div>
         <div class="form-group">
           <div class="form-row">
-            <div class="col">
+            {{-- <div class="col">
               <label>Nombre de Usuario</label>
               <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" autofocus>
               @if ($errors->has('username'))
@@ -93,11 +93,10 @@
                   </span>
               @endif
               <div class="invalid-feedback">
-              {{-- javascript --}}
               </div>
-            </div>
+            </div> --}}
             <div class="col">
-              <label>Pais de Nacimiento</label>
+              <label>Nacionalidad</label>
                   <select id="country" class="form-control" name="country" value="">
                   @if ($errors->has('country'))
                     <span class="invalid-feedback" role="alert">
@@ -106,8 +105,8 @@
                   @endif
                   <option value="">Seleccioná</option>
                 </select>
-                <label id="provincia" style="display:none">Provincia</label>
-                <select id="provinciaSelect" style="display:none" class="form-control mt-2">
+                <label id="province" style="display:none">Provincia</label>
+                <select id="provinceSelect" style="display:none" class="form-control mt-2">
                 </select>
                 {{-- <div class="invalid-feedback">
                 </div> --}}
@@ -173,8 +172,7 @@
           </label>
         </div>
         <div class="form-group">
-          <button class="btn btn-success float-right" type="submit">Registrarse</button>
-          <button class="btn float-right mr-3" type="reset" id="botonDescartar">Resetear</button>
+          <button class="btn btn-success float-right mt-3" type="submit">Registrarse</button>
         </div>
       </form>
       <br>
@@ -185,10 +183,11 @@
     </div>
   </div>
 </div>
-  <script src=""></script>
-  <script src=""></script>
+  <script src="js/countries.js"></script>
+  <script src="js/registerValidation.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="js/url.js"></script>
+
 @endsection

@@ -20,7 +20,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img class="d-block img-fluid" src="images/carrousel-form-1.jpeg" alt="First slide">
+            <img class="d-block img-fluid" src="images/default.jpg" alt="First slide">
             <div class="carousel-caption d-none d-md-block">
               <div class="banner-text">
                 <h2>Empeza a sumar puntos</h2>
@@ -29,7 +29,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block img-fluid" src="images/carrousel-form-2.jpeg" alt="Second slide">
+            <img class="d-block img-fluid" src="images/default.jpg" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
               <div class="banner-text">
                 <h2>Te estamos esperando</h2>
@@ -38,7 +38,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block img-fluid" src="images/carrousel-form-3.jpeg" alt="Third slide">
+            <img class="d-block img-fluid" src="images/default.jpg" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
               <div class="banner-text">
                 <h2>Calidad y variedad</h2>
@@ -106,5 +106,5 @@
     </div>
   </div>
 </div>
-<script src="js/login.js"></script>
+<script src="js/loginValidation.js"></script>
 @endsection

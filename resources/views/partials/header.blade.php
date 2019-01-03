@@ -61,11 +61,11 @@
             <!-- SI EL USUARIO ESTA LOGUEADO LE MUESTRO -->
             @guest
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                    <a class="nav-link" href="{{ route('login') }}">Iniciar sesión</a>
                 </li>
                 <li class="nav-item">
                     @if (Route::has('register'))
-                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        <a class="nav-link" href="{{ route('register') }}">Registrarse</a>
                     @endif
                 </li>
             @else
