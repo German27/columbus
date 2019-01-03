@@ -12,5 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/cart', 'CartController@index');
+
+Route::get('/policy', 'PolicyController@index');
+
+Route::get('/profile', 'ProfileController@index');
+
+Route::get('/contact', 'ContactController@index');
+
+Route::get('/product', 'ProductController@index');
+
+Route::get('/faq', 'FAQController@index');
+
