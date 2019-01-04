@@ -74,7 +74,6 @@ window.onload = function () {
           div.innerHTML = 'Campo obligatorio';
         }
       });
-      console.log(elements);
       // alert("Error en algun campo");
     }
   });

@@ -2,9 +2,40 @@ window.onload = function(){
 
     var regexEmail = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
+    var formRegister = document.getElementById("registerForm");
+    var elements = formRegister.elements;
+    elements = Array.from(elements);
+    elements.pop();
+    elements.pop();
+    elements.pop();
+
+    formRegister.addEventListener('submit', function (event) {
+
+      if (
+        inputName.value.trim() === "" || inputName.value.length < 3 || inputName.value.length > 30 ||
+        inputLastname.value.trim() === "" || inputLastname.value.length < 3 || inputLastname.value.length > 30 ||
+        // inputUsername.value.trim() === "" || inputUsername.value.length < 3 || inputUsername.value.length > 30 ||
+        // inputCountry.value === "0" ||
+        inputEmail.value.trim() === "" || !regexEmail.test((inputEmail.value)) ||
+        inputPassword.value.trim() === "" || inputPassword.value.length < 6 || inputPassword.value.length > 20 ||
+        inputPasswordR.value.trim() === "" || inputPassword.value !== inputPasswordR.value
+      ) {
+        event.preventDefault();
+        elements.forEach(function (element) {
+          if (element.value == "") {
+            element.classList.add("is-invalid");
+            var div = element.parentElement.querySelector('.invalid-feedback');
+            div.innerHTML = 'Campo obligatorio';
+          }
+        });
+        // alert("Error en algun campo");
+      }
+    });
+
     var inputName = document.querySelector('input[name="name"]');
     var inputLastname = document.querySelector('input[name="lastname"]');
     // var inputUsername = document.querySelector('input[name="username"]');
+    var inputCountry = document.getElementById('country');
     var inputEmail = document.querySelector('input[name="email"]');
     var inputPassword = document.querySelector('input[name="password"]');
     var inputPasswordR = document.querySelector('input[name="confirmPassword"]');

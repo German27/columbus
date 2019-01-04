@@ -52,7 +52,7 @@
     <div class="col-md-4 login-sec">
 
 
-      <form class="login-form clearfix" action="{{ route('login') }}" method="post" enctype="multipart/form-data">
+      <form class="login-form clearfix" action="{{ route('login') }}" method="post" id="loginForm" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
           <label>Email</label>
@@ -68,7 +68,7 @@
           </div>
         </div>
         <div class="form-group">
-          <label>Password</label>
+          <label>Contraseña</label>
           <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password">
 
           @if ($errors->has('password'))

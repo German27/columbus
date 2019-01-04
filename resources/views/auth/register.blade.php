@@ -51,7 +51,7 @@
     </div>
 
     <div class="col-md-4 login-sec">
-      <form class="login-form registro-form clearfix" action="{{ route('register') }}" method="POST" enctype="multipart/form-data">
+      <form class="login-form registro-form clearfix" action="{{ route('register') }}" method="POST" id="registerForm" enctype="multipart/form-data">
         @csrf
       <div class="form-group">
         <div class="form-row">
@@ -108,8 +108,8 @@
                 <label id="province" style="display:none">Provincia</label>
                 <select id="provinceSelect" style="display:none" class="form-control mt-2">
                 </select>
-                {{-- <div class="invalid-feedback">
-                </div> --}}
+                <div class="invalid-feedback">
+                </div>
             </div>
           </div>
         </div>
