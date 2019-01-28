@@ -27,7 +27,7 @@
             <div class="form-group">
               <div class="form-row">
                 <div class="col">
-                  <label><h6>Nombre: </h6></label>
+                  <label><h6>Nombre:</h6></label>
                 <input type="text" class="form-control" name="name" value="" disabled>
                   <div class="invalid-feedback">
                   </div>

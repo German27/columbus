@@ -1,5 +1,3 @@
-<!-- ESTE ES EL MENU -->
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="/home">
@@ -11,34 +9,28 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
             <ul class="navbar-nav m-auto">
-                <li>
                   <div class="dropdown">
                     <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Categorias
+                      Hombres
                     </a>
-          		      <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item link-german" href="/"></a>
-                      <!-- CATEGORIA DE HOMBRES -->
+          		    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item link-german" href="/">Category</a>
                       <li class="dropdown-submenu">
-                        <a class="dropdown-item link-german" href="/"></a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            
-                          </li>
-                        </ul>
-                      </li>
-                      <!-- CATEGORIA DE MUJERES -->
-                      <li class="dropdown-submenu">
-                        <a class="dropdown-item link-german" href="/"></a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            
-                          </li>
-                        </ul>
+                        <a class="dropdown-item link-german" href="/">Category</a>
                       </li>
                     </ul>
                   </div>
-                </li>
+                  <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Mujeres
+                    </a>
+          		    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item link-german" href="/">Category</a>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item link-german" href="/">Category</a>
+                      </li>
+                    </ul>
+                  </div>
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">Contacto</a>
                 </li>
@@ -58,7 +50,6 @@
                 </div>
             </form> --}}
             <ul class="navbar-nav m-auto">
-            <!-- SI EL USUARIO ESTA LOGUEADO LE MUESTRO -->
             @guest
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">Iniciar sesión</a>
@@ -114,13 +105,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="registro.php">Registro</a>
                 </li> --}}
-                <!-- TERMINA SI EL USUARIO NO ESTA LOGUEADO LE MUESTRO -->
             @endguest
 
           </ul>
         </div>
     </div>
 </nav>
-
-
-  <!-- ACA TERMINA EL MENU -->
