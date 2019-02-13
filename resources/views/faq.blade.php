@@ -5,7 +5,7 @@
 @section('content')
 
       <div class="col-md-12">
-        <h1 class="text-center mt-3">Preguntas Frecuentes</h1>
+        <h2 class="text-center mt-3">Preguntas Frecuentes</h2>
         <hr>
       </div>
       <div class="col-md-8 offset-md-2">
@@ -37,8 +37,6 @@
                     <li><p>Luego de agregar un producto al carrito de compras podés continuar comprando y sumar otros productos.</p></li>
                     <li><p>Por útimo, seleccioná el método de pago y envio y hace click en Finalizar compra.</p></li>
                   </ul>
-
-                  </p>
                 </div>
               </div>
             </div>

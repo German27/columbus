@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="col-12 mt-3">
-  <h1>Columbus</h1>
+  <h2>Columbus</h2>
   <br>
   <h2>Términos de uso del sitio web</h2>
     <p>Bienvenido al sitio web de Columbus - www.Columbus.com, micrositio, sitio móvil (este "Sitio web") o aplicación móvil ("Aplicación"). Revise los siguientes términos y condiciones ("Términos y condiciones") antes de usar el Sitio web/la Aplicación. Los presentes Términos y condiciones, que se pueden modificar de vez en cuando, corresponden para todos los visitantes o usuarios del Sitio web/la Aplicación.</p>

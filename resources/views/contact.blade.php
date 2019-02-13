@@ -10,7 +10,7 @@
       </div>
 
       <div class="col-12 col-lg-6 add_to_cart_block">
-        <h1 class="text-center mt-3">Contactanos</h1>
+        <h2 class="text-center mt-3">Contactanos</h2>
         <hr>
         <form class="login-form clearfix" action="" method="post" enctype="multipart/form-data">
           <div class="form-group">

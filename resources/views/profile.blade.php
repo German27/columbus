@@ -5,7 +5,7 @@
 @section('content')
 
   <div class="container">
-    <h1 class="text-center mt-3">Perfil</h1>
+    <h2 class="text-center mt-3">Perfil</h2>
     <hr>
     <div class="row">
       <div class="col-sm-3 mt-5">
